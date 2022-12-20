@@ -1,0 +1,118 @@
+@charset "uft-8";
+#Money{
+    margin: 0;
+    padding: 10px;
+    position:absolute;
+    top:10px;
+    right:45%;
+    background-color: black;
+    color: white;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+.wrapper{
+    height: 100vh;
+    background-image: url(./background-phao-hoa-tet_090433708.jpg);
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.items{
+    width: 750px;
+    height: 500px;
+    background-color: rgba( 255, 255, 255, 0,8);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.image{
+    width: 150px;
+    height:200px;
+    margin: 0 25px;
+    border-radius: 5px;
+    position: relative;
+}
+.image > .image__img{
+    width: 150px;
+    height:150px;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.image > .image_plus,.image_minus{
+    margin-top: 10px;
+    position:absolute;
+    background-color: rgb(167, 163, 163, 0.3);
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 3px;
+    color:black;
+}
+.image > .image_minus{
+    right:0;
+}
+/* chỗ mở bát */
+.play{
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.play__image{
+    width: 100%;
+    height: 280px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.play__image > img{
+    width: 130px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    transition: all 2s;
+}
+.play__image > :last-child{
+    margin-left: 90px;
+}
+.btn{
+    margin-right: 30px;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+}
+@keyframes change{
+    0%{
+        transform: scale(0);
+    }
+    2%{
+        transform: scale(0.1);
+    }
+    40%{
+        transform: scale(0.3);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    60%{
+        transform: scale(0.6);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

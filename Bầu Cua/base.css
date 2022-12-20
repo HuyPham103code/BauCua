@@ -1,0 +1,159 @@
+@charset "uft-8";
+:root{
+    --black-color: black;
+    --red-color: red;
+    --white-color: white;
+    --bg-color: #444444;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* signup */
+.signup-main{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    display: flex;
+}
+.layout-signup{
+    margin:auto;
+    width: 350px;
+    height: 400px;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+    position: absolute;
+    animation: show ease-in-out 1.25s;
+    top: 150px;
+    left: 39%;
+}
+.layout-signup > h3{
+    text-align: center;
+    font-size: 35px;
+    margin:20px;
+}
+.layout-signup > form > input{
+    font-size: 25px;
+    height: 40px;
+    margin: 15px;
+    border-radius: 5px;
+    padding: 0 8px;
+}
+.layout-signup > button{
+    font-size: 25px;
+    margin:10px;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+@keyframes show {
+    from{
+        top:-100px;
+        left:39%;
+    }
+    to{
+        top: 150px;
+        left: 39%;
+    }
+}
+.closeLogin, .closeSignup{
+    display: none;
+}
+/* login */
+.login-main{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    display: flex;
+}
+.layout-login{
+    margin:auto;
+    width: 350px;
+    height: 400px;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+    position: absolute;
+    animation: show ease-in-out 1.25s;
+    top: 150px;
+    left: 39%;
+}
+.layout-login > h3{
+    text-align: center;
+    font-size: 35px;
+    margin:20px;
+}
+.layout-login > form > input{
+    font-size: 25px;
+    height: 40px;
+    margin: 15px;
+    border-radius: 5px;
+    padding: 0 8px;
+}
+.layout-login > button{
+    font-size: 25px;
+    margin:10px;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+@keyframes show {
+    from{
+        top:-100px;
+        left:39%;
+    }
+    to{
+        top: 150px;
+        left: 39%;
+    }
+}
+.layout-login > button > a{
+    text-decoration: none;
+    color: black;
+}
+/* nút đăng nhập */
+#btn-login, .to-login{
+    position: absolute;
+    top:10px;
+    right:10px;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color:white;
+    cursor: pointer;
+}
+.logout{
+    position: absolute;
+    top:10px;
+    right:130px;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color:white;
+}
+.close-all{
+    position: absolute;
+    top:130px;
+    right:370px;
+    font-size: 50px;
+    padding:0;
+    border: none;
+    color:white;
+    z-index: 10;
+    cursor: pointer;
+}
+.close-x{
+    display: none;
+}
